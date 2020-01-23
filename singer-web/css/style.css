@@ -10,7 +10,6 @@ body{
 }
 header{
     background: linear-gradient(to right, rgba(28, 29, 29, 0.7)  , rgba(90, 94, 92, 0.7)),url(../images/headaer-bg.jpg);
-    background-attachment: ;
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
