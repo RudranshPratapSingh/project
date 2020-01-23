@@ -1,0 +1,71 @@
+/* font-family: 'Rubik', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+header{
+    background: linear-gradient(to right, rgba(28, 29, 29, 0.7)  , rgba(90, 94, 92, 0.7)),url(../images/rsz_71505191_155799685617387_7847261810726907921_n.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    height: 15vh;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo{
+    height: 15vh;
+    position: relative;
+}
+.logo img{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-00%, -50%);
+
+
+}
+.menu{
+    position: relative;
+    width: 30%;
+    min-width: 400px;
+}
+.menu .menu-list{
+    width: 60%;
+    min-width: 500px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.menu-list-item{
+    list-style: none;
+   
+}
+.menu-list-item a{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.menu-list-item:hover a{
+    color: rgb(77, 219, 139);
+}
