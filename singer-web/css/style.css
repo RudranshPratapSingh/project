@@ -9,8 +9,8 @@ body{
     font-size: 20px;
 }
 header{
-    background: linear-gradient(to right, rgba(28, 29, 29, 0.7)  , rgba(90, 94, 92, 0.7)),url(../images/rsz_71505191_155799685617387_7847261810726907921_n.jpg);
-    background-attachment: fixed;
+    background: linear-gradient(to right, rgba(28, 29, 29, 0.7)  , rgba(90, 94, 92, 0.7)),url(../images/headaer-bg.jpg);
+    background-attachment: ;
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ transform: translate(-00%, -50%);
 }
 .menu{
     position: relative;
-    width: 30%;
+    width: 38%;
     min-width: 400px;
 }
 .menu .menu-list{
@@ -167,3 +167,80 @@ transform: translate(-00%, -50%);
     transform: translate(-50%, -50%);
 }
 
+
+/***********************
+          ABOUT
+************************/
+
+.about{
+    background: linear-gradient(to right, rgba(44, 43, 43, 0.92)  , rgba(44, 43, 43, 0.92)),url(../images/lailana-stage.jpg);
+    background-attachment: fixed;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.about-image{
+    position: relative;
+    border: 3px solid rgb(77, 219, 139);
+    width: 30vw;
+    height: 500px;
+    min-width: 350px;
+    border-radius: 3px;
+    margin-left: 50px;
+}
+.about-image img{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 30vw;
+    height: 500px;
+    min-width: 350px;
+    border-radius: 3px;
+    background-origin: content-box;
+}
+.about-content{
+    width: 50%;
+    min-width: 400px;
+    color: white;
+}
+.about-heading{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;    
+}
+.about-heading h1{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.about-heading h1::after{
+    content: '';
+    height: 5px;
+    /* width: 100px; */
+    position: absolute;
+    background: rgb(77, 219, 139);
+    display: inline-block;
+    top: 50%;
+    bottom: 50%;
+    left: -30px;
+    right: -30px;
+    transform: scale(1);
+    transform-origin: right;
+    z-index: -1;
+    transition: 300ms;
+}
+
+.about-heading:hover h1::after{
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+}
