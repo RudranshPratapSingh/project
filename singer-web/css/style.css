@@ -210,6 +210,8 @@ transform: translate(-00%, -50%);
     width: 50%;
     min-width: 400px;
     color: white;
+    margin-right: 50px;
+
 }
 .about-heading{
     font-size: 1.6rem;
@@ -221,6 +223,7 @@ transform: translate(-00%, -50%);
     position: relative;
     z-index: 1;
     display: inline-block;
+    margin-bottom: 40px;
 }
 .about-heading h1::after{
     content: '';
@@ -243,4 +246,15 @@ transform: translate(-00%, -50%);
     top: 0px;
     bottom: 0px;
     height: 100%;
+}
+
+.about-para{
+    font-size: 0.98rem;
+    color: rgb(189, 174, 174);
+    margin-top: 15px;
+}
+.green-clr{
+    color:rgb(77, 219, 139);
+    font-size: 1.1rem;
+    font-weight: 700;
 }
