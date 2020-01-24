@@ -1,6 +1,3 @@
-
-
-
 var typeString = ['Hi', 'Hello', 'Hola', '你好','Salut'];
       var  i = 0;
       var count = 0
@@ -28,3 +25,14 @@ var typeString = ['Hi', 'Hello', 'Hola', '你好','Salut'];
           }
         }
       }
+
+
+
+
+openMenu =()=>{
+  document.getElementById('mobile-menu').style.width='100%'
+}
+
+closeMenu =()=>{
+  document.getElementById('mobile-menu').style.width='00%'
+}

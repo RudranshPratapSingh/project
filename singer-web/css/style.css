@@ -114,6 +114,10 @@ transform: translate(-00%, -50%);
 
 }
 
+.mobile-menu{
+    display: none;
+}
+
 /*************************************ACTIVE CLASS*********************************/
 .active a{
     color: rgb(77, 219, 139);

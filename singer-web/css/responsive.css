@@ -17,7 +17,14 @@
 
     nav{
         flex-direction: row;
-        padding:30px 0;
+        padding:5px 0;
+    }
+    .logo{
+        width: 20%;
+        display: inline-block;
+    }
+    .logo img{
+        margin:0 auto;
     }
     
     .menu{
@@ -51,6 +58,7 @@
     }
     .about-image img{
         width: 100%;
+        z-index: 123;
     }
     .about-content{
         width: 80%;
@@ -60,9 +68,84 @@
 
 
     }
+    /*********ham-menu*********/
+    .open-mobile-menu{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 100;
+       
+        cursor: pointer;
+    }
 
+    .open-mobile-menu .line{
+        width: 20px;
+        height: 3px;
+        background: rgb(255, 254, 254);
+        border-radius: 3px;
+    }
+    .open-mobile-menu .middle-line{
+        width: 30px;
+        margin: 4px 0;
+    }
+
+    /********movile menu********/
+    .mobile-menu{
+        width: 0%;
+        height: 100%;
+        display:block;
+        background-color:  rgb(77, 219, 139);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        z-index: 2000;
+        overflow: hidden;
+        transition: 500ms;
+        
+        
+    }
+    
+    .mobile-menu-list{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* height: 100%;
+        width: 100%; */
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .mobile-menu-list-item{
+        list-style: none;
+        /* width: 40px;
+        height: 40px; */
+        /* background-color: grey; */
+    }
+    .mobile-menu-list-item a{
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
    
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media only screen and (max-width: 550px) {
 
@@ -84,6 +167,10 @@
         top: -0.25rem;
         left: -0.25rem;
     }
- 
+
+    .mobile-menu-list{
+        flex-direction: column;
+    }
+
 
   }
