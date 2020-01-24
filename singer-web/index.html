@@ -12,24 +12,27 @@
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet"></head>
 <body>
-    <header>
-        <nav>
+    <header id="header">
+        <nav id='nav' class='nav'> 
             <div class="logo">
                 <img src="images/logo1.png" alt=" LAILANA">
             </div>
 
             <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-item active"><a href="home" class="menu-list-item-link">
+                <ul class="menu-list" id='menu-list'>
+                    <li class="menu-list-item active" id='menu-list-item'><a href="#header" class="menu-list-item-link">
                         home
                     </a></li>
-                    <li class="menu-list-item"><a href="" class="menu-list-item-link">
+                     <li class="menu-list-item " id='menu-list-item'><a href="#about" class="menu-list-item-link">
+                        about
+                    </a></li>
+                    <li class="menu-list-item" id='menu-list-item'><a href="" class="menu-list-item-link">
                         gallery
                     </a></li>
-                    <li class="menu-list-item"><a href="" class="menu-list-item-link">
+                    <li class="menu-list-item" id='menu-list-item'><a href="" class="menu-list-item-link">
                         my song
                     </a></li>
-                    <li class="menu-list-item"><a href="" class="menu-list-item-link">
+                    <li class="menu-list-item" id='menu-list-item'><a href="" class="menu-list-item-link">
                         get in touch
                     </a></li>
                 </ul>
@@ -43,21 +46,24 @@
 
 
         <div class="mobile-menu" id="mobile-menu">
-            <div class="open-mobile-menu" onclick="closeMenu()" id="hamMenu">
+            <!-- <div class="open-mobile-menu" onclick="closeMenu()" id="hamMenu">
                 <div class="line"></div>
                 <div class="line"></div>
-            </div>
+            </div> -->
                 <ul class="mobile-menu-list" >
-                    <li class="mobile-menu-list-item "><a href="home" class="mobile-menu-list-item-link">
+                    <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="#header" class="mobile-menu-list-item-link">
                         home
                     </a></li>
-                    <li class="mobile-menu-list-item"><a href="" class="mobile-menu-list-item-link">
+                    <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="#about" class="mobile-menu-list-item-link">
+                        about
+                    </a></li>
+                    <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="" class="mobile-menu-list-item-link">
                         gallery
                     </a></li>
-                    <li class="mobile-menu-list-item"><a href="" class="mobile-menu-list-item-link">
+                    <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="" class="mobile-menu-list-item-link">
                         my song
                     </a></li>
-                    <li class="mobile-menu-list-item"><a href="" class="mobile-menu-list-item-link">
+                    <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="" class="mobile-menu-list-item-link">
                         get in touch
                     </a></li>
                 </ul>
@@ -75,7 +81,7 @@
         </div>
     </header>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="about-image">
             <img src="images/about.jpg" alt="">
         </div>
