@@ -399,18 +399,15 @@ footer{
 }
 
 .top-botton{
-       display: none;
-
+   /* display: ; */
+    width: 50px;
+    height: 50px;
     background: linear-gradient(to right, rgb(77, 219, 139),rgb(77, 219, 181));
 }
-
-
-.dislay-none{
+.none{
     position: fixed;
     bottom: 50px;
     z-index: 1000;
     border: none;
     right: 50px;
-    width: 50px;
-    height: 50px;
 }

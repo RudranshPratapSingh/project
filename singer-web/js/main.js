@@ -78,4 +78,10 @@ window.onscroll = function() {
   } else {
     navbar.classList.remove('scrolled')
   }
+
+  if (window.pageYOffset > 300) {
+    document.getElementById("myDIV").classList.add('none')
+} else {
+    document.getElementById("myDIV").classList.remove('none')
+  }
 }

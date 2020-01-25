@@ -45,9 +45,9 @@ openMenu =()=>{
       navbar.classList.remove('scrolled')
     }
 
-    if (window.pageYOffset > 500) {
-        topButton.classList.add('display-none')
+    if (window.pageYOffset > 300) {
+        document.getElementById("myDIV").classList.add('none')
     } else {
-        topButton.classList.remove('display-none')
+        document.getElementById("myDIV").classList.remove('none')
       }
   }
