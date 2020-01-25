@@ -21,6 +21,7 @@
     }
     .logo{
         width: 20%;
+        justify-content: left;
         display: inline-block;
     }
     .logo img{
@@ -144,6 +145,9 @@
       .social-media-list ul{
         justify-content: center;
           
+      }
+      .newsletter-form{
+          display: block;
       }
   }
 
