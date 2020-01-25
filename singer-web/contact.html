@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-       Home | Lailana
-    </title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Me| Lailana</title>
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
 <body>
     <header id="header">
         <nav id='nav' class='nav'> 
@@ -20,7 +22,7 @@
 
             <div class="menu">
                 <ul class="menu-list" id='menu-list'>
-                    <li class="menu-list-item active" id='menu-list-item'><a href="index.html" class="menu-list-item-link">
+                    <li class="menu-list-item " id='menu-list-item'><a href="index.html" class="menu-list-item-link">
                         home
                     </a></li>
                      <!-- <li class="menu-list-item " id='menu-list-item'><a href="#about" class="menu-list-item-link">
@@ -32,7 +34,7 @@
                     <li class="menu-list-item" id='menu-list-item'><a href="" class="menu-list-item-link">
                         my song
                     </a></li>
-                    <li class="menu-list-item" id='menu-list-item'><a href="contact.html" class="menu-list-item-link">
+                    <li class="menu-list-item active" id='menu-list-item'><a href="contact.html" class="menu-list-item-link">
                         contact me
                     </a></li>
                 </ul>
@@ -51,7 +53,7 @@
                 <div class="line"></div>
             </div> -->
                 <ul class="mobile-menu-list" >
-                    <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="index.html" class="mobile-menu-list-item-link">
+                    <li class="mobile-menu-list-item active" onclick="closeMenu()"><a href="index.html" class="mobile-menu-list-item-link">
                         home
                     </a></li>
                     <!-- <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="#about" class="mobile-menu-list-item-link">
@@ -63,67 +65,42 @@
                     <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="" class="mobile-menu-list-item-link">
                         my song
                     </a></li>
-                    <li class="mobile-menu-list-item" onclick="closeMenu()"><a href="contact.html" class="mobile-menu-list-item-link">
+                    <li class="mobile-menu-list-item active" onclick="closeMenu()"><a href="contact.html" class="mobile-menu-list-item-link">
                         contact me
                     </a></li>
                 </ul>
             </div>
 
-        <div class="header-content">
-           
-            <div class="typing-heading">
-            
-                <div class="contact-heading ">
-                  <span id="typing"> </span> |
-                    
-                </div>
-            </div>
+        <div class="header-content heading">
+            <h1 class="">contact me</h1>
         </div>
     </header>
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>contact information</h2>
 
-    <div class="about" id="about">
-        <div class="about-image">
-            <img src="images/about.jpg" alt="">
+            <p class="para">
+                In case you some aquestions popped in your’s mind,<br>
+                FeIn case you some aquestions popped in your’el email or even visit us.
+            </p>
+
+            <h2 class="address">
+                <span>
+                    <i class="material-icons">home</i> Address: 123 Street Name, City Name, United
+                </span> <br>
+                <span>
+                    <i class="material-icons">email</i>Email: info@beatswave.com
+                </span>
+            </h2>
         </div>
 
-        <div class="about-content">
-            <div class="about-heading heading ">
-                <h1>biography</h1>
-            </div>
-            <p class="about-para">
-                As a Briton born to two wonderful parents of diametrically opposite culture 
-                and religions, I’m a ‘third culture’ child.  Having spent my formative years
-                in Dubai, a melting pot of over 120 nationalities, I see myself as a world 
-                citizen. I’m a smorgasbord of different cultures that I have had imprinted 
-                on my being by interacting by my social circle which is a United Nations 
-                 of sorts. 
-            </p>
-            <p class="about-para">
-                I love music and I love the way it influences people’s moods, beliefs, 
-                opinions and actions. Music knows no race, creed, religion, gender or skin 
-                colour. Music is for everyone and if music was a language it would be a 
-                universal language of peace. 
-            </p>
-            <p class="about-para">
-                My songs tell stories. Stories either derived from my own personal experiences,
-                 or the experiences of people close to me whom I love. Or even world events that
-                  I feel strong about.
-            </p>
-            <p class="about-para">
-                I believe artists have a role to play in making life better for as many people as they
-                 can, through their music and the messages that their music carries. Life is always more 
-                 beautiful with music in it.
-            </p>
-            <p class="about-para">
-                Love,
-            </p>
-
-            <p class="about-para green-clr">
-                Lailana
-            </p>
-
-            
-        </div>
+        <form action="" autocomplete="off">
+            <input type="text" class="contact-form" placeholder="full name">
+            <input type="email" class="contact-form" placeholder="email">
+            <input type="text" class="contact-form" placeholder="subject">
+            <textarea name="message" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <button class="btn">send message</button>
+        </form>
 
     </div>
 
@@ -217,12 +194,11 @@
     </footer>
 
     <a href="#header">
-        <button class="top-botton">
+        <button class="top-botton" id="topBotton">
             <i class="material-icons">arrow_upward</i>
         </button>
     </a>
 
-
-    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
