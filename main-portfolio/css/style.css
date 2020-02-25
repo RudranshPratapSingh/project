@@ -1,0 +1,104 @@
+/**************************************
+       making horizontal
+       ****************************/
+body{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    overflow-y: scroll;    
+    scroll-behavior: smooth;
+}
+.container {
+    width: 600vw;
+    height: 100vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+  -ms-overflow-style: none;
+
+
+  }
+  ::-webkit-scrollbar {
+    display:none;
+  }
+  
+  .section {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -4px;
+    overflow-x: hidden;
+  }
+.container {
+    vertical-align: middle;
+    overflow-x: scroll; 
+  }
+
+  .main-btn{
+    width:80px;
+    height: 40px;
+    color: white;
+    background: transparent;
+    border:1px solid #5ACF8C;
+    outline: none;
+    box-shadow: 1px 1px 1px white;
+}
+.btn-section{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.right-btn{margin-left: 10px;}
+.right-btn:hover{
+    transform: translateX(1px);
+    box-shadow: 1px 1px 2px white;
+}
+.right-btn:active{
+    transform: translateX(0px);
+    box-shadow: 0px 0px 0px white;
+}
+.left-btn:hover{
+    transform: translateX(-1px);
+    box-shadow: 1px 1px 2px white;
+}
+.left-btn:active{
+    transform: translateX(0px);
+    box-shadow: 0px 0px 0px white;
+}
+
+/****************************************
+        home
+        ****************************/
+
+.home{
+   
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    background: linear-gradient(
+        to right, 
+        rgba(58, 59, 59, 0.4),
+        rgba(92, 94, 93, 0.4)),
+        url(../img/bg-1.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: relative;
+}
+
+.home-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5ACF8C;
+    font-size: 30px;
+    /* font-weight: 300; */
+}
