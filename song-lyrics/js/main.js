@@ -50,6 +50,9 @@ function showData(data){
         .join('')}
     </ul>
   `;
+  document.getElementById('video').innerHTML = ''
+
+
 }
 
 
