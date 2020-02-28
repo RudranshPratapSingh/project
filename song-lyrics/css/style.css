@@ -78,6 +78,9 @@ button{
 button:hover{
     transform: scale(0.95);
 }
+li{
+    list-style: none;
+}
 
 .result{
     color: white;
@@ -85,9 +88,20 @@ button:hover{
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 20px;
     position: relative;
+    display: block;
 
 }
-
+#video{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin-bottom: 50px;
+    color: green;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .song-list{
     list-style: none;
     display: flex;
@@ -151,6 +165,7 @@ button:hover{
     text-transform: capitalize;
 }
 
+
 @media only screen and (max-width: 800px) {
     header{
         height: 70vh;
@@ -180,5 +195,6 @@ button:hover{
         font-size: 17px;
         
     }
+   
     
   }
