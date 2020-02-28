@@ -83,8 +83,8 @@ button:hover{
     color: white;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 20px;position: relative;
-    
+    margin-top: 20px;
+    position: relative;
 
 }
 
@@ -135,6 +135,19 @@ button:hover{
     cursor: pointer;
     font-weight: 400;
     padding: 4px 10px;
+    text-transform: capitalize;
+}
+.btn{
+    background-color: rgb(26, 170, 115);
+    margin: 0 auto;
+    border: 0;
+    font-size: 14px;
+    border-radius: 10px;
+    color: rgb(199, 193, 193);
+    cursor: pointer;
+    font-weight: 400;
+    padding: 6px 20px;
+    width: 100px;
     text-transform: capitalize;
 }
 
