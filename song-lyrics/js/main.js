@@ -30,7 +30,7 @@ async function searchSong(searchValue){
     const data = await searchResult.json();
 
     // console.log(finaldata)
-    showData(data)
+    showData(data);
 }
 
 //display final result in DO
@@ -73,11 +73,12 @@ result.addEventListener('click', e=>{
 
 // Get lyrics for song
 async function getLyrics(artist, songTitle) {
-   
+  
     const res = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
+
     const data = await res.json();
     const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>');
-        
+       
     var pageToken = '';
 
     var arr_search = {

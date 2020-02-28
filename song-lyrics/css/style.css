@@ -109,7 +109,9 @@ li{
     position: absolute;
     left: 50%;
     transform: translate(-50% ,0);
-
+    background: linear-gradient(to left, 
+    rgb(40, 40, 40),
+    rgb(40, 40, 40))
 
 }
 .song-list li{
