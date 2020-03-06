@@ -84,6 +84,27 @@ nav .inner-nav{
     height: 100px;
     text-align: center;
 }
+.menu{
+    width: 90vw;
+    margin: 0 auto;
+    background:rgba(235, 229, 229, 0.8);
+    height: 55vh;
+    position: absolute;
+    top: 100px;
+    transition: height 300ms;
+}
+.menu .menu-item{
+    padding: 60px;
+}
+.menu .menu-item li{
+    margin-bottom: 25px;
+}
+.menu .menu-item li a{
+    color: rgb(17, 46, 65);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 
 /****header-content**/
 
@@ -141,9 +162,7 @@ nav .inner-nav{
     scrollbar-width: thin;
   }
 
-
-
-  /************large screen***/
+  ***********large screen**
 
   @media only screen and (min-width: 700px) {
     .mobile-toogle{
@@ -151,5 +170,30 @@ nav .inner-nav{
     }
     header{
         height:100vh ;
+    }
+    .header-content{
+        flex-direction: column;
+        margin: auto 0;
+        text-align: center;
+    }
+    .header-img img{
+        width: 55%;
+        max-width: 450px;
+        height: ;
+    }
+    .content{
+        margin-top: 30px;
+        color: rgb(17, 46, 65);
+        text-transform: uppercase;
+    
+    }
+    .content h1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .content span{
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
     }
   }
