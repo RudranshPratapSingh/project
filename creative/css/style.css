@@ -155,7 +155,7 @@ nav .inner-nav{
     margin-top: 30px;
     color: rgb(17, 46, 65);
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: text;
 
 }
 .content h1{
@@ -277,10 +277,11 @@ nav .inner-nav{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        text-align: center;
     }
     .content h1{
         font-size: 4rem;
-        letter-spacing: 20px;
+        letter-spacing: 05px;
     }
     .content span{
         font-size: 1.9rem;
