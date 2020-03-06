@@ -36,7 +36,7 @@ nav{
 
 header{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,6 @@ header nav{
     display: flex;
     flex-direction: row;
     width: 100vw;
-   
 }
 .scrolled{
     position: fixed;
@@ -110,10 +109,11 @@ nav .inner-nav{
     left: 30px;
     right: 30px;
     z-index: 5646546;
-    transition: height 300ms;
+    transition: all 300ms;
 }
 .menu .menu-item{
     padding: 60px;
+    width: 100%;
 }
 .menu .menu-item li{
     margin-bottom: 25px;
@@ -147,6 +147,7 @@ nav .inner-nav{
     margin-top: 30px;
     color: rgb(17, 46, 65);
     text-transform: uppercase;
+    cursor: pointer;
 
 }
 .content h1{
@@ -170,17 +171,16 @@ nav .inner-nav{
     border: none;
     border-radius: 5px;
     background-color: rgba(255, 20, 130, 0.726);
-    color: rgb(17, 46, 65);
+    color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 2px;
-    /* transition: border 300ms; */
 }
 
 .main-btn:hover{
-    border: 2px solid #9B78EF;
+    /* border: 2px solid #9B78EF; */
     background-color: white;
-    /* color: rgba(255, 20, 130, 0.726);; */
+    color: rgba(255, 20, 130, 0.726);;
 }
 .scrollable-element {
     scrollbar-width: thin;
@@ -193,6 +193,9 @@ nav .inner-nav{
 
   @media only screen and (min-width: 600px) {
     .mobile-toogle{
+        display: none;
+    }
+    .menu{
         display: none;
     }
     header{
@@ -229,6 +232,10 @@ nav .inner-nav{
     }
     .desktop-menu-item li{
         margin-left: 50px;
+    }
+    .menu{
+        height: 0px;
+        width: 0px;
     }
     
     .logo{
