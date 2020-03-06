@@ -33,7 +33,7 @@ nav{
 
 header{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     overflow-x: hidden;
     background: linear-gradient(to left top, rgba(219, 26, 100, 0.623), rgba(71, 13, 231, 0.555));
 }
@@ -83,27 +83,6 @@ nav .inner-nav{
     margin: 0 auto;
     height: 100px;
     text-align: center;
-}
-.menu{
-    width: 90vw;
-    margin: 0 auto;
-    background:rgba(235, 229, 229, 0.8);
-    height: 55vh;
-    position: absolute;
-    top: 100px;
-    transition: height 300ms;
-}
-.menu .menu-item{
-    padding: 60px;
-}
-.menu .menu-item li{
-    margin-bottom: 25px;
-}
-.menu .menu-item li a{
-    color: rgb(17, 46, 65);
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
 }
 
 /****header-content**/
@@ -160,4 +139,17 @@ nav .inner-nav{
 }
 .scrollable-element {
     scrollbar-width: thin;
+  }
+
+
+
+  /************large screen***/
+
+  @media only screen and (min-width: 700px) {
+    .mobile-toogle{
+        display: none;
+    }
+    header{
+        height:100vh ;
+    }
   }
