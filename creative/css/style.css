@@ -25,7 +25,12 @@ body{
     background: rgb(135, 5, 221); 
     border-radius: 10px;
   }
-  
+  ::selection{
+    background-color:#FF6584;
+    color: white;
+    
+}
+
   
 nav{
     text-transform: uppercase;
@@ -46,12 +51,14 @@ header nav{
     display: flex;
     flex-direction: row;
     width: 100vw;
+    user-select: none;
 }
 .scrolled{
     position: fixed;
     top: 0px;
     z-index: 3333333;
     background: rgba(82, 80, 95, 0.938);
+    
 }
 
 li{
@@ -141,7 +148,8 @@ nav .inner-nav{
 .header-img img{
     width: 55%;
     max-width: 450px;
-    height: ;
+    -moz-user-select:none ;
+    user-select: none;
 }
 .content{
     margin-top: 30px;
@@ -221,6 +229,9 @@ nav .inner-nav{
         color: white;
         font-weight: 500;
         letter-spacing: 1px;
+    }
+    .main-btn{
+        margin-top: 30px;
     }
     
    
