@@ -41,7 +41,7 @@ nav{
 
 header{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
