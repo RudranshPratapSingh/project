@@ -22,6 +22,17 @@ const menuToogle = () =>{
 
 var navbar = document.querySelector('nav')
 
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+// var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     navbar.classList.add('scrolled')
+//   } else {
+//     navbar.classList.remove('scrolled')
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
+
 window.onscroll = function() {
 
   // pageYOffset or scrollY
@@ -30,10 +41,4 @@ window.onscroll = function() {
   } else {
     navbar.classList.remove('scrolled')
   }
-
-//   if (window.pageYOffset > 300) {
-//     document.getElementById("myDIV").classList.add('none')
-// } else {
-//     document.getElementById("myDIV").classList.remove('none')
-//   }
 }
