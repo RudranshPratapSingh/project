@@ -16,8 +16,9 @@
 }
 .title{
     text-align: center;
-    padding: 60px;
+    padding: 60px 30px;
     letter-spacing: normal;
+
 }
 .title p{
     color: rgba(237, 55, 110, 0.932);
@@ -29,7 +30,7 @@
 }
 .title h1{
     color: #112E41;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700px;
     /* padding: 10px 10px; */
     /* width: 100%; */
