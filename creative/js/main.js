@@ -2,16 +2,16 @@ const menu = document.getElementById('menu')
 var isMenuOpen = false;
 
 menu.style.height= 0
-menu.style.opacity= '0' 
+menu.style.display= 'none' 
 
 const menuToogle = () =>{
     if (isMenuOpen=== true){
-        menu.style.opacity= '0'
+        menu.style.display= 'none'
         menu.style.height= 0       
         isMenuOpen = false
     }
     else{
-        menu.style.opacity= '1' 
+        menu.style.display= 'flex' 
         menu.style.height= '55vh'
         isMenuOpen = true
     }
