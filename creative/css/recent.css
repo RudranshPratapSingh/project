@@ -1,6 +1,7 @@
 .recent{
     padding: 30px;
     position: relative;
+    background: rgba(190, 178, 178, 0.5);
 }
 .work-row{
     display: flex;
@@ -9,8 +10,9 @@
 
 }
 .work-row:not(:last-child){
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
+
 .word-card{
     width: 100%;
     min-width: 300px;
@@ -60,10 +62,10 @@ button span{
 }
 
 
+
 @media only screen and (min-width: 1100px) {
    .recent{
-    padding:50px 100px 40px 100px;
-    background: rgba(190, 178, 178, 0.349);
+    padding:50px 150px 40px 100px;
 }
     .work-cards{
         display: flex;
