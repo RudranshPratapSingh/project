@@ -1,0 +1,72 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.home {
+    background: linear-gradient(to top, rgba(88, 88, 90, 0.9) 0%, rgba(25, 26, 25, 0.9) 100%), url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.main-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.main-intro span {
+    display: block;
+    font-family: 'Chango', cursive;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin: 0px 0 40px 0;
+    line-height: 55px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 10px 30px 10px rgba(34, 33, 33, 0.37);
+}
+
+
+/*******2-section******/
+
+.about {
+    color: white;
+    background: linear-gradient(to top, rgba(88, 88, 90, 0.9) 0%, rgba(25, 26, 25, 0.9) 100%), url(../img/bg-2.jpg);
+}
+
+.pg-title {
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Passion One', cursive;
+    color: rgba(91, 94, 91, 0.336);
+    letter-spacing: 5px;
+    user-select: none;
+}
+
+.about p {
+    font-size: 13px;
+}
+
+
+/******section 3****/
+
+.skill {
+    background: linear-gradient(to top, rgba(88, 88, 90, 0.9) 0%, rgba(25, 26, 25, 0.9) 100%), url(../img/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
